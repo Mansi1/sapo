@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint on Canvas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        canvas {
+            border: 2px solid #fff;
+            cursor: crosshair;
+        }
+    </style>
+    <audio id="intro0" src="intro0.m4a"></audio>
+    <audio id="intro1" src="intro1.m4a"></audio>
+    <audio id="intro2" src="intro2.m4a"></audio>
+    <audio id="dead" src="dead.m4a"></audio>
+    <audio id="loose" src="loose.m4a"></audio>
+</head>
+  <body style="background-color: #b5e7a0;">
+    <div style="display: flex; flex-direction: column;">
+      <img id="logo" src="logo.png" style="padding-bottom: 50px; max-width: 80%; margin: auto" width="400" />
+      <button style="margin: auto" id="button">Start game</button>
+    </div>
+    <div>
+      <canvas id="app" style="display: none"></canvas>
+    </div>
+      <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
